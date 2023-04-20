@@ -29,7 +29,7 @@ void ht_init(ht_table_t *table) {
 /*
 * Search for an element in a table.
 * If successful, returns a pointer to the found element; otherwise returns NULL value.
- */
+*/
 ht_item_t *ht_search(ht_table_t *table, char *key) {
     if(table != NULL){
         ht_item_t *item = (*table)[get_hash(key)];
